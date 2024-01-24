@@ -1,0 +1,1 @@
+{"name": "ThingJS 1.0 tjs example","type": "scene","version": "1.0.0","author": "ThingJS Team","description": "The Scene of ThingJS 1.0","main": "index.json","dependencies": {"thingjs": "1.0.0"}}

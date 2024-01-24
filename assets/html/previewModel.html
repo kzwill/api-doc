@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>预览模型</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #div3d {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div3d"></div>
+  </body>
+  <script src="../vendor/thingjs.min-V1.3.11.js"></script>
+  <script>
+    let app = new THING.App({
+      background: 'black', // 背景颜色或图片
+      skyBox: 'BlueSky', // 天空盒资源名称
+    });
+
+    app.create({
+      type: 'Thing',
+      id: '预览模型', // 物体 id
+      name: '预览模型', // 物体名称
+      url: 'https://model.3dmomoda.com/models/7fbb5bff56af4cf681b32daca3b8d71d/0/gltf/', // 模型地址
+      position: [0, 0, 0], // 在世界坐标系下的位置
+      complete: (ev) => {
+        flyToModel(ev.object);
+      },
+    });
+
+    /**
+     * @Description: 摄像头飞行至模型
+     * @return {*}
+     */
+    function flyToModel(object) {
+      app.camera.flyTo({
+        object,
+        time: 2000,
+      });
+    }
+  </script>
+</html>

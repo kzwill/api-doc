@@ -1,0 +1,571 @@
+{
+  "data" : {
+    "postEffect" : [ {
+      "postEffect" : {
+        "enable" : true,
+        "bloom" : {
+          "enable" : false,
+          "strength" : 0.14,
+          "radius" : 0.4,
+          "threshold" : 0.7
+        },
+        "colorCorrection" : {
+          "enable" : true,
+          "exposure" : 0,
+          "brightness" : 0,
+          "contrast" : 1.2,
+          "saturation" : 1,
+          "gamma" : 1.1
+        },
+        "vignetting" : {
+          "enable" : false,
+          "color" : "0x61839b",
+          "offset" : 0.6
+        },
+        "blurEdge" : {
+          "enable" : true,
+          "offset" : 0.6
+        },
+        "film" : {
+          "enable" : false,
+          "grayscale" : false,
+          "noiseIntensity" : 0.35,
+          "scanlinesIntensity" : 0,
+          "scanlinesCount" : 2048
+        },
+        "chromaticAberration" : {
+          "enable" : true,
+          "chromaFactor" : 0.01
+        },
+        "screenSpaceReflection" : {
+          "enable" : true,
+          "minGlossiness" : 0.2
+        },
+        "SmallGlowBloom" : {
+          "enable" : true,
+          "strength" : 0.68,
+          "radius" : 0.6,
+          "threshold" : 0.22
+        },
+        "MiddleGlowBloom" : {
+          "enable" : true,
+          "strength" : 5,
+          "radius" : 0,
+          "threshold" : 0
+        },
+        "FXAA" : {
+          "enable" : false
+        },
+        "screenSpaceAmbientOcclusion" : {
+          "enable" : false,
+          "radius" : 0.2,
+          "quality" : "medium",
+          "intensity" : 0.8,
+          "temporalFilter" : true,
+          "ignoreTransparent" : false
+        },
+        "GlowBloom" : {
+          "enable" : false,
+          "strength" : 0.52,
+          "radius" : 0.4,
+          "threshold" : 0.2
+        }
+      }
+    }, { } ],
+    "overlay" : {
+      "gradient" : {
+        "gradientColorOverlayType" : "custom",
+        "gradientColorOverlayEnable" : true,
+        "gradientColorPerBar" : [ 0, 0.16, 0.37, 0.7, 1 ],
+        "gradientColorBar" : [ [ "234", "255", "251", "1" ], [ "255", "255", "255", "1" ], [ "255", "255", "255", "1" ], [ "161", "161", "161", "1" ], [ "123", "123", "123", "1" ] ],
+        "gradientCustomColorPerBar" : [ 0, 0.16, 0.37, 0.7, 1 ],
+        "gradientCustomColorBar" : [ [ "234", "255", "251", "1" ], [ "255", "255", "255", "1" ], [ "255", "255", "255", "1" ], [ "161", "161", "161", "1" ], [ "123", "123", "123", "1" ] ],
+        "angleX" : 0,
+        "angleY" : 0,
+        "angleZ" : 320,
+        "gradientMapDirection" : [ 0.7660444431189778, -0.6427876096865396, 0 ]
+      },
+      "cloud" : {
+        "visible" : false
+      },
+      "vectorEarth" : [ ]
+    },
+    "accessToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJkb25nc2h1c2hlbmciLCJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9VU0VSIn1dLCJzb3VyY2UiOjEsIm1tZElkIjoxNzQ4NTYsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJjbGllbnRfaWQiOiJ0aGluZ2pzIiwid2VpeGluIjpudWxsLCJwaG9uZSI6IjEzODEwNTcwMDE5Iiwic2NvcGUiOlsidXNlcl9pbmZvIl0sIm5hbWUiOm51bGwsImlkIjoiMjAwOTE1MTRzdG5mbGFheSIsImV4cCI6MTY1NDgzMTEzNSwianRpIjoiYzBiNjczMDMtODcxOS00ZDc0LTk1NTktOGVkYjU0NGYyNTA2IiwiZW1haWwiOiJkb25nc2h1c2hlbmdAdWlubm92YS5jb20iLCJ1c2VybmFtZSI6ImRvbmdzaHVzaGVuZyJ9.KNxyMkfbF4CIMETSDLt2HiAxAEr5G2kBvlmoyIHKJXY",
+    "terrainUrl" : "",
+    "isProxima" : true,
+    "cameraFlyTo" : {
+      "lonlat" : [ 116.445, 40.1, -9.313225746154785E-10 ],
+      "pitch" : 40,
+      "height" : 172700,
+      "heading" : 0,
+      "time" : 0,
+      "angle" : 0
+    },
+    "light" : [ {
+      "showHelper" : false,
+      "ambientLight" : {
+        "ambientFlag" : true,
+        "intensity" : 0.37,
+        "color" : 16777215
+      },
+      "hemisphereLight" : {
+        "hemisphereFlag" : true,
+        "intensity" : 0.3,
+        "color" : 16773301,
+        "groundColor" : 10066329
+      },
+      "mainLight" : {
+        "mainLightFlag" : true,
+        "shadow" : true,
+        "shadowQuality" : "ultra",
+        "intensity" : 0.8,
+        "color" : 16777215,
+        "alpha" : 45,
+        "beta" : 334,
+        "shadowBias" : 0,
+        "flag" : true
+      },
+      "spotLights" : [ ],
+      "position" : [ 2197143.98, 4143357.79, 4322476.76 ],
+      "distance" : 2000,
+      "secondaryLight" : {
+        "shadow" : false,
+        "shadowQuality" : "medium",
+        "intensity" : 0.34,
+        "color" : 16777215,
+        "alpha" : 45,
+        "beta" : 120,
+        "name" : "secondaryLight",
+        "title" : "第二平行光",
+        "flag" : true
+      },
+      "tertiaryLight" : {
+        "shadow" : false,
+        "shadowQuality" : "medium",
+        "intensity" : 0.32,
+        "color" : 16777215,
+        "alpha" : 45,
+        "beta" : -120,
+        "name" : "tertiaryLight",
+        "title" : "第三平行光",
+        "flag" : true
+      }
+    }, {
+      "position" : [ 2197143.98, 4143357.79, 4322476.76 ]
+    } ],
+    "background" : {
+      "type" : "image",
+      "value" : "/skybox/icon_20210907175227315_296571.jpg"
+    },
+    "tileLayer" : [ {
+      "maximumLevel" : 18,
+      "name" : "高德街道(02)",
+      "attribution" : "高德",
+      "style" : {
+        "grayFilterColorBar" : [ [ "222", "222", "222", "0.3" ], [ "99", "99", "99", "0.4228915662650602" ], [ "66", "66", "66", "0.6" ], [ "33", "33", "33", "1" ] ],
+        "grayFilterPerBar" : [ 0, 0.14, 0.36, 1 ],
+        "rgba" : "rgba(255,255,255,1)",
+        "singleFilterEnable" : false,
+        "grayFilterEnable" : true,
+        "brightness" : 1,
+        "contrast" : 1,
+        "hue" : 0.0,
+        "saturation" : 1,
+        "gamma" : 1,
+        "gradientColorOverlayEnable" : false,
+        "gradientCustomColorPerBar" : [ 0, 0.5, 0.7, 1 ],
+        "gradientCustomColorBar" : [ [ 255, 255, 255 ], [ 255, 255, 255 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ],
+        "angleX" : 0,
+        "angleY" : 0,
+        "angleZ" : 0,
+        "gradientColorOverlayType" : "''",
+        "gradientColorBar" : [ [ 255, 255, 255 ], [ 255, 255, 255 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ],
+        "gradientColorPerBar" : [ 0, 0.5, 0.7, 1 ],
+        "gradientMapDirection" : [ 0.6560590289905069, -0.7547095802227722, 1.8485053434113212E-16 ],
+        "filterType" : "grayFilter",
+        "template" : "custom"
+      },
+      "type" : "TileLayer",
+      "imgSrc" : "baseMap/system/baseMap04.png",
+      "url" : "http://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=7&x={x}&y={y}&z={z}"
+    } ],
+    "terrainExaggeration" : 1,
+    "exportTime" : 20220609112752,
+    "scenes" : [ ],
+    "layers" : [ {
+      "type" : "BigBuildingLayer",
+      "enable" : true,
+      "labelId" : 1,
+      "url" : "/geojson/6fbccf5794a7ff1f9ac3978a904256fa.geojson",
+      "id" : 206286,
+      "renderOrder" : -39,
+      "geometryType" : "GeoBuilding",
+      "modelList" : [ {
+        "code" : 28127,
+        "layerId" : 206286,
+        "coordinates" : "116.39769514285716,39.90461942857143",
+        "pickedIndex" : "4-1186",
+        "azimuth" : 0,
+        "userData" : "{\"id\":\"geo_building_area.1257440\",\"height\":36}",
+        "deleted" : true,
+        "createTime" : 20210923140220,
+        "modifyTime" : 20220523173900
+      }, {
+        "code" : 28128,
+        "layerId" : 206286,
+        "coordinates" : "116.3976865714286,39.90460714285714",
+        "pickedIndex" : "95-19501",
+        "azimuth" : 0,
+        "userData" : "{\"id\":\"geo_building_area.1396782\",\"height\":6}",
+        "deleted" : true,
+        "createTime" : 20210923140226,
+        "modifyTime" : 20220523173900
+      } ],
+      "sync" : "true",
+      "offsetHeight" : 0.0,
+      "extrudeField" : "height",
+      "extrudeFactor" : 0.7,
+      "layerConfig" : {
+        "blending" : false,
+        "envMapIntensity" : 0.7,
+        "envMapUrl" : "/image/20210422181602269_668289.jpg",
+        "type" : "cool",
+        "extrudeFactor" : 0.7,
+        "extrudeField" : "height",
+        "transparent" : false,
+        "textureWrap" : "stretch",
+        "postRadialBlur" : false,
+        "glowStrength" : 0,
+        "effect" : false,
+        "offset" : [ 0, 0 ],
+        "roughness" : [ 0.6, 0.2 ],
+        "metalness" : [ 0.8, 1 ],
+        "repeat" : [ 1, 1 ],
+        "windowBrightness" : 1.5,
+        "windowColor" : "rgb(61,241,90)",
+        "windowImageUrl" : "/image/icon_20210423164704298_383968.jpg",
+        "isCool" : true,
+        "lights" : false,
+        "reflectedPanorama" : false,
+        "reflectedPanoramaAngle" : "",
+        "textureSize" : [ 3, 3 ],
+        "AOConfig" : {
+          "normal" : {
+            "useAoMap" : true,
+            "aoMapIntensity" : 0.73,
+            "aoMapUrl" : "uvMap/systemIcons/defaultAoMap.png"
+          },
+          "cool" : {
+            "useAoMap" : false,
+            "aoMapIntensity" : 0.8,
+            "aoMapUrl" : "uvMap/systemIcons/defaultAoMap.png"
+          }
+        },
+        "windowTextureWrap" : "around",
+        "windowTextureSize" : [ 200, 50 ],
+        "windowTextureAroundType" : "windowTextureSize",
+        "specularFactor" : [ 1, 1 ],
+        "offsetHeightAdded" : 0,
+        "speed" : [ 0, 0 ],
+        "windowSpeed" : [ 0, 0 ],
+        "openEnvMap" : true,
+        "imageUrl" : [ {
+          "value" : [ "/image/icon_20210901154941799_448786.png", "/image/icon_20210901155221881_639828.png" ],
+          "condition" : "[height<=50.0]"
+        }, {
+          "value" : [ "/image/icon_20210901154716289_395357.png", "/image/icon_20210901155257954_34782.png" ],
+          "condition" : "[height>50.0]&&[height<=100.0]"
+        }, {
+          "value" : [ "/image/icon_20210901154716289_395357.png", "/image/icon_20210901154328476_92210.png" ],
+          "condition" : "[height>100.0]&&[height<=150.0]"
+        }, {
+          "value" : [ "/image/icon_20210901154716289_395357.png", "/image/icon_20210901154537981_118055.png" ],
+          "condition" : "[height>150.0]&&[height<=200.0]"
+        }, {
+          "value" : [ "/image/icon_20210901154716289_395357.png", "/image/icon_20210901155338328_706485.png" ],
+          "condition" : "[height>200.0]"
+        } ],
+        "opacity" : 0.88,
+        "useAoMap" : false,
+        "aoMapIntensity" : 0.8,
+        "aoMapUrl" : "/image/defaultAoMap.png",
+        "useWindow" : true
+      },
+      "name" : "Building",
+      "visibleLevel" : [ 12, 22 ],
+      "isAd" : false,
+      "isEffectEarth" : 0,
+      "geoDataId" : 61670,
+      "fieldNames" : "[{\"name\":\"height\",\"type\":\"Number\",\"value\":[0, 475]}]"
+    }, {
+      "type" : "FeatureLayer",
+      "enable" : true,
+      "labelId" : 81,
+      "url" : "/geojson/4609e90078cadc9317920127634bccc9.geojson",
+      "id" : 206287,
+      "renderOrder" : -38,
+      "geometryType" : "GeoLine",
+      "offsetHeight" : 0.0,
+      "layerConfig" : {
+        "offsetHeightAdded" : 0,
+        "type" : "image",
+        "glowStrength" : 0.5,
+        "postRadialBlur" : true,
+        "texType" : "image",
+        "width" : 2,
+        "speed" : 0.1,
+        "effect" : true,
+        "blending" : true,
+        "sizeAttenuation" : true,
+        "textureWrap" : "stretch",
+        "textureSize" : 100,
+        "uvRatio" : [ 1.0, 1.0 ],
+        "postRadialBlur2" : false,
+        "lineType" : "Plane",
+        "imageUrl" : "/image/lightFlow_strip02.png",
+        "opacity" : 1.0
+      },
+      "name" : "DistrictArea",
+      "visibleLevel" : [ 7, 22 ],
+      "isAd" : false,
+      "isEffectEarth" : 0,
+      "geoDataId" : 61671,
+      "fieldNames" : "[{\"name\":\"id\",\"type\":\"String\"}]"
+    }, {
+      "type" : "FeatureLayer",
+      "enable" : true,
+      "labelId" : 5,
+      "url" : "/geojson/8adfdfe59ba3d659e27c9d3662b417f0.geojson",
+      "id" : 206293,
+      "renderOrder" : -32,
+      "geometryType" : "GeoPolygon",
+      "offsetHeight" : 0.0,
+      "extrudeHeight" : 5.0,
+      "layerConfig" : {
+        "color" : "rgba(5,188,57,0.2)",
+        "type" : "vector",
+        "effect" : false,
+        "outlineColor" : "rgba(255,64,39,1)",
+        "extrudeFactor" : 1,
+        "outlineWidth" : 0,
+        "lights" : false,
+        "postRadialBlur" : false,
+        "textureSize" : [ 100, 100 ],
+        "blending" : false,
+        "envMapIntensity" : 0.98,
+        "envMapUrl" : "/image/build/",
+        "transparent" : false,
+        "glowStrength" : 0.5,
+        "offset" : [ -0.33, -0.09 ],
+        "metalness" : [ 0.6, 0.6 ],
+        "roughness" : [ 0.4, 0.4 ],
+        "repeat" : [ 0.2, 0.09 ],
+        "windowBrightness" : 1.7,
+        "windowColor" : "rgb(7,168,255)",
+        "windowImageUrl" : "/image/buildingMask1.jpg",
+        "isCool" : false,
+        "reflectedPanorama" : false,
+        "reflectedPanoramaAngle" : "",
+        "AOConfig" : {
+          "normal" : {
+            "useAoMap" : true,
+            "aoMapIntensity" : 0.85
+          },
+          "lights" : {
+            "useAoMap" : true,
+            "aoMapIntensity" : 0.6
+          },
+          "cool" : {
+            "useAoMap" : false,
+            "aoMapIntensity" : 0
+          }
+        },
+        "offsetHeightAdded" : 0,
+        "windowTextureWrap" : "normal",
+        "windowTextureSize" : [ 10, 10 ],
+        "windowTextureAroundType" : "windowTextureSize",
+        "outlineImageUrl" : "/image/lightFlow_strip.png",
+        "outlineGlowStrength" : 1,
+        "outlinePostRadialBlur" : false,
+        "outlineType" : "vector",
+        "outlineSizeAttenuation" : true,
+        "outlineLineType" : "Plane",
+        "outlineEffect" : false,
+        "outlineSpeed" : 0,
+        "outlineBlending" : false,
+        "outlineOpacity" : 1,
+        "textureWrap" : "stretch",
+        "opacity" : 0.05,
+        "useAoMap" : true,
+        "aoMapIntensity" : 0.85,
+        "useWindow" : false
+      },
+      "name" : "Greenland",
+      "visibleLevel" : [ 8, 22 ],
+      "isAd" : false,
+      "isEffectEarth" : 0,
+      "geoDataId" : 61677,
+      "fieldNames" : "[]"
+    }, {
+      "type" : "FeatureLayer",
+      "enable" : true,
+      "labelId" : 2,
+      "url" : "/geojson/940b1f4bf45b55599785aac787d11cc3.geojson",
+      "id" : 206296,
+      "renderOrder" : -29,
+      "infoWindow" : {
+        "title" : "",
+        "enable" : true,
+        "displayMode" : "clickShow",
+        "type" : "standard",
+        "style" : "default",
+        "customHtml" : "<div class='sign' id='PopupBoard' style='width: 210px;background-color: rgba(192, 192, 192, 0.6);color: #cccccc;top: 0;left: 0;z-index: 100;display: inline-block;position: absolute;'>\n    <div class = 'headline' style = 'font-size:16px;color:rgb(250, 250, 250);padding: 4px 4px 4px 12px;background:linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0,0.7));line-height:40px;'>\n        详细信息\n    </div>\n    <div class = 'info' style = 'background-color: rgba(0,0,0, 0.8);padding: 10px 8px 10px 8px;'>\n        <ul class='info-list' style = 'color:#cccccc;list-style: none;margin:0;padding: 0;' >\n        </ul>\n    </div>\n    <div class='point-top' style='position: absolute;top: -3px;right: 3px;cursor:pointer;'>\n        x\n    </div>\n</div>",
+        "fieldData" : [ ]
+      },
+      "geometryType" : "GeoLine",
+      "offsetHeight" : 0.0,
+      "layerConfig" : {
+        "type" : "image",
+        "glowStrength" : 0.4,
+        "postRadialBlur" : false,
+        "texType" : "image",
+        "width" : 2,
+        "speed" : 0.1,
+        "effect" : false,
+        "blending" : false,
+        "offsetHeightAdded" : 0,
+        "sizeAttenuation" : true,
+        "textureWrap" : "stretch",
+        "textureSize" : 100,
+        "uvRatio" : [ 1.0, 1.0 ],
+        "postRadialBlur2" : false,
+        "lineType" : "Plane",
+        "imageUrl" : "/image/icon_20201020150045069_97200.png",
+        "opacity" : 1.0
+      },
+      "name" : "RoadImportant",
+      "visibleLevel" : [ 8, 22 ],
+      "isAd" : false,
+      "isEffectEarth" : 0,
+      "geoDataId" : 61680,
+      "fieldNames" : "[]"
+    }, {
+      "type" : "FeatureLayer",
+      "enable" : true,
+      "labelId" : 7,
+      "url" : "/geojson/a0e1b505295d68aa7a99d1befa4904ff.geojson",
+      "id" : 206300,
+      "renderOrder" : -25,
+      "geometryType" : "GeoPolygon",
+      "extrudeField" : "无",
+      "extrudeFactor" : 1,
+      "layerConfig" : {
+        "color" : "rgba(38,44,42,1)",
+        "type" : "cool",
+        "effect" : false,
+        "outlineColor" : "rgba(255,64,39,1)",
+        "extrudeFactor" : 1,
+        "extrudeField" : "无",
+        "outlineWidth" : 0,
+        "textureSize" : [ 100, 100 ],
+        "windowColor" : "rgb(7,168,255)",
+        "lights" : true,
+        "isCool" : true,
+        "glowStrength" : 0,
+        "postRadialBlur" : false,
+        "repeat" : [ 0.2, 0.09 ],
+        "offset" : [ -0.33, -0.09 ],
+        "metalness" : [ 1, 0.6 ],
+        "roughness" : [ 0.4, 0.4 ],
+        "envMapIntensity" : 5,
+        "windowBrightness" : 1.7,
+        "windowImageUrl" : "",
+        "envMapUrl" : "/image/build/",
+        "isOpenWindow" : false,
+        "reflectedPanorama" : false,
+        "reflectedPanoramaAngle" : "",
+        "AOConfig" : {
+          "normal" : {
+            "useAoMap" : true,
+            "aoMapIntensity" : 0.85
+          },
+          "lights" : {
+            "useAoMap" : true,
+            "aoMapIntensity" : 0.6
+          },
+          "cool" : {
+            "useAoMap" : false,
+            "aoMapIntensity" : 0
+          }
+        },
+        "blending" : false,
+        "outlineImageUrl" : "/image/lightFlow_strip.png",
+        "outlineGlowStrength" : 1,
+        "outlinePostRadialBlur" : false,
+        "outlineType" : "vector",
+        "outlineSizeAttenuation" : true,
+        "outlineLineType" : "Plane",
+        "outlineEffect" : false,
+        "outlineSpeed" : 0,
+        "outlineBlending" : false,
+        "offsetHeightAdded" : 0,
+        "windowTextureWrap" : "normal",
+        "windowTextureSize" : [ 10, 10 ],
+        "windowTextureAroundType" : "windowTextureSize",
+        "outlineOpacity" : 1,
+        "textureWrap" : "stretch",
+        "opacity" : 1.0,
+        "useAoMap" : false,
+        "aoMapIntensity" : 0
+      },
+      "name" : "Water",
+      "visibleLevel" : [ 8, 22 ],
+      "isAd" : false,
+      "isEffectEarth" : 0,
+      "geoDataId" : 61684,
+      "fieldNames" : "[]"
+    }, {
+      "type" : "FeatureLayer",
+      "enable" : true,
+      "labelId" : 7,
+      "url" : "/geojson/8107dd5000691aac773a1bed5ede2a1d.geojson",
+      "id" : 206301,
+      "renderOrder" : -24,
+      "geometryType" : "GeoWater",
+      "offsetHeight" : 0.0,
+      "layerConfig" : {
+        "color" : "rgba(27,129,167,1)",
+        "flowSpeed" : 1,
+        "alpha" : 1,
+        "waveLength" : 1.0,
+        "reflectionNormal" : "/image/waternormals.jpg",
+        "refractionNormal" : "/image/Water_2_M_Normal.jpg",
+        "reflectionImage" : "/image/water1.png",
+        "refractionImage" : "/image/refraction.jpg",
+        "offsetHeightAdded" : 0
+      },
+      "name" : "WaterImportant",
+      "visibleLevel" : [ 8, 22 ],
+      "isAd" : false,
+      "isEffectEarth" : 0,
+      "geoDataId" : 61685,
+      "fieldNames" : "[]"
+    } ],
+    "depthMode" : 1,
+    "map" : {
+      "type" : "Map",
+      "style" : {
+        "fog" : true,
+        "fogExp" : true,
+        "fogDensity" : 0,
+        "fogExpDensity" : 1.04,
+        "fogExpColor" : "#363636",
+        "atmosphere" : false,
+        "night" : false
+      }
+    },
+    "projectId" : 21217,
+    "isEncrypt" : false
+  },
+  "success" : 1
+}

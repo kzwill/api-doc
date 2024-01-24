@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover"
+    />
+    <title>接口文档</title>
+
+    <link rel="stylesheet" href="assets/css/theme-simple.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-9LYZ7R080K');
+    </script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <script>
+      // Docsify
+      window.$docsify = {
+        // GENERAL
+        // -----------------------------------------------------------------
+        name: '接口文档',
+        coverpage: 'coverpage.md',
+        homepage: 'introduction.md',
+        loadSidebar: 'sidebar.md',
+
+        // NAVIGATION
+        // -----------------------------------------------------------------
+        auto2top: true,
+        maxLevel: 3,
+        subMaxLevel: 4,
+
+        // PLUGINS
+        // -----------------------------------------------------------------
+
+        executeScript: true,
+
+        /*搜索相关设置*/
+        search: {
+          paths: 'auto', // 注意：仅适用于 paths: 'auto' 模式
+          placeholder: '搜索',
+          // 支持本地化
+          placeholder: {
+            '/zh-cn/': '搜索',
+            '/': 'Type to search',
+          },
+          noData: '找不到结果',
+          depth: 4,
+          hideOtherSidebarContent: false,
+          namespace: 'Docsify-Guide',
+        },
+        plugins: [
+          // Restores initial <title>
+          function persistTitle(hook, vm) {
+            var titleElm = document.querySelector('title');
+            var rootTitle = titleElm && titleElm.textContent;
+            var pageTitlePrefix = window.$docsify.name
+              ? window.$docsify.name + ' - '
+              : '';
+
+            if (rootTitle) {
+              hook.doneEach(function () {
+                var currentTitle = titleElm.textContent;
+                var isRoot = !/\/[a-z]/.test(location.hash);
+                var newTitle = isRoot
+                  ? rootTitle
+                  : pageTitlePrefix + currentTitle;
+
+                titleElm.textContent = newTitle;
+              });
+            }
+          },
+        ],
+      };
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/docsify.min.js"></script>
+    <script src="assets/js/prism-bash.min.js"></script>
+    <!-- <script src="assets/js/prism-markdown.min.js"></script> -->
+    <script src="assets/js/prism-json.min.js"></script>
+    <script src="assets/js/prism-java.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
+    <script src="assets/js/docsify-copy-code.min.js"></script>
+    <script src="assets/js/docsify-pagination.min.js"></script>
+    <script src="assets/js/external-script.min.js"></script>
+    <script src="assets/js/search.min.js"></script>
+    <script src="assets/js/zoom-image.min.js"></script>
+  </body>
+</html>

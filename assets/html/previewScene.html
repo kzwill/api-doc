@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预览园区</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div3d {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div3d"></div>
+</body>
+<script src="../vendor/thingjs.min-V1.3.11.js"></script>
+<script>
+    let app = new THING.App({
+        url: '../resource/scene/CB20210506005502/',  // 初始场景资源路径
+        background: 'black',                // 背景颜色或图片
+        skyBox: 'BlueSky',                  // 天空盒资源名称
+        complete: () => {                   // 初始化完成的函数回调
+            console.log('园区加载完成');
+            // app.level.change(app.query('.Campus')[0]);
+        }
+    });
+
+</script>
+
+</html>

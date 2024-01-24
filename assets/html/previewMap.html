@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预览地球</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div3d {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div3d"></div>
+</body>
+<script src="../vendor/thingjs.min-V1.3.11.js"></script>
+<script src="../vendor/uearth.min.v1.7.10.js"></script>
+<script>
+    let app = new THING.App({
+        complete: () => {   // 加载完成后的回调函数
+            console.log('app加载完成');
+            let map = app.create({
+                type: 'Map',    // 类型
+                url: '../resource/map/map1/map.json', // 资源地址
+                resourceConfig: {
+                    resourcePrefix: `../resource/map/map1/` // 资源路径前缀
+                },
+                complete: () => {  // 加载完成后的回调函数
+                    console.log('地球加载完成')
+                }
+            })
+        }
+    });
+</script>
+
+</html>

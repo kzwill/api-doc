@@ -1,0 +1,77 @@
+:root {
+  --code-inline-background: #b4d5fe3d;
+  --code-block-padding: 1em 1.5em 1em 1.5em;
+  --content-max-width: 70em;
+  --sidebar-nav-link-padding: 0.1em 0;
+}
+
+.markdown-section figure,
+.markdown-section p,
+.markdown-section ol,
+.markdown-section ul {
+  margin: 0.3em 0;
+}
+
+/* 设置滚动条的宽度和颜色 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 设置滚动条的轨道背景色 */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* 设置滚动条的滑块颜色 */
+::-webkit-scrollbar-thumb {
+  background-color: #2668be;
+}
+
+/* 设置滚动条的滑块悬停时的颜色 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1f6fe7;
+}
+
+/* 复制按钮样式 */
+.docsify-copy-code-button {
+  padding: 0.35em 0.5em !important;
+}
+
+.docsify-copy-code-button:hover {
+  color: #b0cbf5;
+}
+
+.docsify-copy-code-button .label {
+  letter-spacing: 2px;
+}
+
+.docsify-copy-code-button .success {
+  letter-spacing: 2px;
+  color: greenyellow;
+}
+
+/* sidebar */
+.sidebar-nav a {
+  padding: 2px 10px;
+  margin-left: 10px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-nav .active > a {
+  background: rgb(255, 255, 255);
+}
+
+.sidebar-nav li p strong {
+  border-bottom: 1px #0000001c solid;
+  display: flex;
+  width: 100%;
+  padding: 0 6px;
+  letter-spacing: 2px;
+}
+.sidebar-nav li p {
+  margin: 5px 0;
+}
+
+h3 {
+  border-bottom: 1px #00000026 solid !important;
+}
