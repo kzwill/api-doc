@@ -15,10 +15,28 @@
         width: 100%;
         height: 100%;
       }
+
+      #btns {
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        left: 0;
+
+        z-index: 999;
+      }
+
+      button {
+        width: 100px;
+        height: 30px;
+      }
     </style>
   </head>
 
   <body>
+    <div id="btns">
+      <button id="btn" onclick="capture()">生成截图</button>
+      <button id="btn" onclick="view()">2D/3D</button>
+    </div>
     <div id="div3d"></div>
   </body>
   <script src="../vendor/thingjs.min-V1.3.11.js"></script>
@@ -48,6 +66,24 @@
         object,
         time: 2000,
       });
+    }
+
+    function capture() {
+      const base64 = app.captureScreenshotToImage(1920, 1080, 'png', 1);
+      // 将base图片下载到本地
+      const a = document.createElement('a');
+      a.href = base64;
+      a.download = 'test.png';
+      a.click();
+    }
+
+    function view() {
+      var viewMode = app.camera.viewMode;
+      if (viewMode == 'normal') {
+        app.camera.viewMode = THING.CameraView.TopView; // 切换为2D视图
+      } else {
+        app.camera.viewMode = THING.CameraView.Normal; // 默认为3D视图
+      }
     }
   </script>
 </html>
