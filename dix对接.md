@@ -9,8 +9,8 @@
 **配置参数**
 
 ```js
-// dix的部署url
-dix.url=http://182.92.207.12/dix
+#dix的部署url
+uino.dix-url=http://10.100.33.78:1551/tarsier-dix
 ```
 
 **示例代码**
